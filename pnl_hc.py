@@ -38,6 +38,7 @@ def plot_pnl():
     df_vn30.total_gain = df_vn30.gain.cumsum()
     df_vn30['VN30']=df_vn30['total_gain']
     df_vn30=df_vn30[['Date','VN30','gain']]
+    df_vn30['VN30']=df_vn30['VN30']-df_vn30['VN30'].iloc[0]
 
     chart_data = df.merge(df_vn30, on='Date',how='left')
     chart_data['Date'] = pd.to_datetime(chart_data.Date)
