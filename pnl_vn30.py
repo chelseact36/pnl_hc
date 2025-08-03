@@ -47,7 +47,7 @@ df_vn30=resample(df, '1D')
 # df_vn30 = get_vn30(1000)
 # df_vn30 = test_live(df_vn30, 1, 'D')
 # df_vn30.Date = pd.to_datetime(df_vn30.Date) 
-df_vn30 = df_vn30[df_vn30.Date >= pd.to_datetime('2025-06-30')]
+df_vn30 = df_vn30[df_vn30.Date >= pd.to_datetime('2025-06-27')]
 df_vn30['gain'] = df_vn30.Close.diff() 
 df_vn30.dropna(inplace=True)
 df_vn30['total_gain'] = df_vn30.gain.cumsum() 
