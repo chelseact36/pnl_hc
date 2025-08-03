@@ -52,5 +52,5 @@ df_vn30['gain'] = df_vn30.Close.diff()
 df_vn30.dropna(inplace=True)
 df_vn30['total_gain'] = df_vn30.gain.cumsum() 
 df_vn30.reset_index(inplace=True)
-
+##
 df_vn30.to_csv(r'E:\1.Finpros\Alpha_Chien\My_Pnl\pnl_hc\df_vn30.csv',index=False)
