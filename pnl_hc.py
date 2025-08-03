@@ -5,7 +5,7 @@ import seaborn as sns
 import datetime
 import numpy as np
 
-st.title("HC")
+st.title("HTC")
 sidebar_radiio = st.sidebar.radio(
     'Chức Năng', 
     ( "Kết quả đầu tư", "Tính lợi nhuận")
